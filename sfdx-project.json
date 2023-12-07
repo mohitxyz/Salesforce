@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "mohitdev@001.com",
+  "namespace": "",
+  "sfdcLoginUrl": "https://bct-5c-dev-ed.lightning.force.com/",
+  "sourceApiVersion": "58.0"
+}

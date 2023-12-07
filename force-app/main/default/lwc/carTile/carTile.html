@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Car Tile" icon-name="standard:account">
+        <a onclick={handleCarSelect}>
+            <img src={car.Picture__c}> 
+            <div class="title slds-align_absolute-center">
+                <p> {car.Contact__r.Name} </p>
+            </div>
+        </a>
+    </lightning-card>
+</template>

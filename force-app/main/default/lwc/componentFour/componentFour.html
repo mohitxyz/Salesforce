@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Card">
+
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-input label="Input" value={input} onchange={inputOneHandler}> </lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item>
+                <lightning-button label="Button" onclick={buttonHandler}> </lightning-button>
+            </lightning-layout-item>
+
+            <lightning-layout-item>
+                <lightning-input type="checkbox" label="Switch" onchange={checkHandler}> </lightning-input>
+                <template if:true={check}>
+                    <p> checked</p>
+                </template>            
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <template for:each={loop} for:item="item">
+                    <p key={item}> {item} </p>
+                </template>
+            </lightning-layout-item>
+
+            <p> child color {comboValue}</p>
+            <lightning-combobox
+            name="color"
+            label="Color"
+            value={comboValue}
+            placeholder="Select Progress"
+            options={colorOptions}
+            onchange={handleChange} >
+            </lightning-combobox>
+
+
+        </lightning-layout>
+
+    </lightning-card>
+   
+</template>

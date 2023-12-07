@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <lightning-input type="text" variant="standard" name="expOne" label="Heading"  onchange={onChangeExp}></lightning-input>
+            </lightning-layout-item>
+           
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-input-rich-text name="expTwo" label="Description"  onchange={onChangeExp}></lightning-input-rich-text>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-button variant="brand" label="Add Experience"  onclick={handleClick}></lightning-button>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-card>
+</template>

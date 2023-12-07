@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent" icon-name="standard:account">
+        <lightning-input type="text" variant="standard" name="input" label="Input" onchange={changehandler} ></lightning-input>
+        <lightning-button variant="brand" label="Button" title="Button" onclick={handleClick}></lightning-button>
+
+        <c-child-a parent-id = {parent}> </c-child-a>
+    </lightning-card>
+</template>

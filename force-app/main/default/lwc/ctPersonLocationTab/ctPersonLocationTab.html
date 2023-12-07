@@ -1,0 +1,37 @@
+<template>
+    <lightning-tabset variant="vertical">
+        <lightning-tab label="Person View" value="Person View" onactive={handleTabChange}>
+            <lightning-card>
+                    <div class="right-allign" >
+                        <lightning-input type="text" label="Search by Name" onchange={searchHandler}> </lightning-input>
+                    </div>
+                
+                <div style="height: 300px;">
+                <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    onrowaction={handleRowAction}>
+                </lightning-datatable>
+                </div>
+            </lightning-card>
+            
+        </lightning-tab>
+        <lightning-tab label="Location View" title="2nd tab extended title" value="Location View" onactive={handleTabChange} >
+            <lightning-card>
+                <div class="right-allign" >
+                        <lightning-input type="text" label="Search by Name" onchange={searchHandler}> </lightning-input>
+                </div>
+
+                <div style="height: 300px;">
+                <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    onrowaction={handleRowAction}>
+                </lightning-datatable>
+                </div>
+            </lightning-card>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

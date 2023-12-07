@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Card 2">
+        <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleClick}></lightning-button>
+        <lightning-input type="text" variant="standard" name="name" label="Name" placeholder="type here..." onchange={handleName} ></lightning-input>
+        <p> {paramObject}</p>
+        <p> {returnedName} </p>
+        <lightning-button variant="brand" label="Throw" title="throw" onclick={throwToParent}></lightning-button>
+
+        <lightning-input type="text" variant="brand" name="firstName" label="First name" onchange={firstNameChangeHandler}></lightning-input>
+        <lightning-button variant="success" label="Publish" title="Publish" onclick={handlePublish}></lightning-button>
+        <lightning-button variant="success" label="LMS" title="LMS" onclick={handleLMS}></lightning-button>
+
+    </lightning-card>
+</template>

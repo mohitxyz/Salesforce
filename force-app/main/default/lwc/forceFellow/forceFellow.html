@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Card1">
+        <lightning-input type="text" variant="standard" name="name" label="Name" placeholder="type here..." onchange={nameChangeHandler}></lightning-input>
+        <lightning-input type="number" variant="standard" name="number" label="Number" placeholder="type here..." onchange={numberChangeHandler}></lightning-input>
+        <lightning-button variant="destructive" label="callChild" title="child" onclick={handleClick}></lightning-button>
+        <p> {paramObj.name} {paramObj.number} </p>
+        <c-force-fellow2 param-object={testVal} onchildclick={childClickHandler}> </c-force-fellow2>
+    </lightning-card>
+</template>

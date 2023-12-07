@@ -1,0 +1,17 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Car Details" icon-name="standard:account">
+    <lightning-tabset variant="standard" active-tab-value="carDet">
+        <lightning-tab label="Car Detail" value="carDet" onactive={tabChangeHandler}>
+            <template if:true={carFound}>
+                 <c-car-detail car={wiredUi}> </c-car-detail>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Add Experience" value="AddExp" onactive={tabChangeHandler}>
+           <c-add-car-experience car-id={carId} ></c-add-car-experience>
+        </lightning-tab>
+        <lightning-tab label="View Experiences" value="ViewExp" onactive={tabChangeHandler}>
+            <c-show-experience experience-id={expId}> </c-show-experience>
+        </lightning-tab>
+    </lightning-tabset>
+   </lightning-card> 
+</template>

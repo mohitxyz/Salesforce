@@ -1,0 +1,24 @@
+<template >
+    <lightning-card title="File Upload Example" icon-name="standard:file">
+    <div class="slds-p-horizontal_small">
+      <lightning-file-upload
+        label="Attach files"
+        record-id={recordId}
+        accept={acceptedFormats}
+        
+        onuploadfinished={handleUploadFinished}
+        multiple
+      >
+      </lightning-file-upload>
+    </div>
+
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Card Title
+      </div>
+          <lightning-flow onstatuschange={statusHandler} flow-api-name={childFlow} flow-input-variable={inputParam} >
+          </lightning-flow>
+    </lightning-card>
+
+  </lightning-card>
+</template>

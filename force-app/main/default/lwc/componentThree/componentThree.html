@@ -1,0 +1,14 @@
+<template>
+<lightning-card title="Card1">
+    <lightning-layout>
+        <lightning-layout-item>
+            <lightning-input type="text" label="Color"  onchange={inputColorValue}></lightning-input>
+            <lightning-button label="Change Color" onclick={changeButton}> </lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+    
+</lightning-card>
+    
+<c-component-four> </c-component-four>
+<c-component-five onsend={sendHandler}> </c-component-five>
+</template>

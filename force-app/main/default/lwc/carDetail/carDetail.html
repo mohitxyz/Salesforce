@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title={carName} icon-name="standard:account">
+       
+       <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+            <div class="custom-box">{perDayRent}</div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+            <div class="custom-box">{carName}</div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="1" medium-device-size="2" large-device-size="2">
+            <img src={image}>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+            <lightning-button variant="brand" label="Show Full Detail" title="Full Details" onclick={fullDetailsHandler}></lightning-button>
+        </lightning-layout-item>
+        
+       </lightning-layout>
+    </lightning-card>
+</template>

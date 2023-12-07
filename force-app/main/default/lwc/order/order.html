@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <lightning-card icon-name='custom:custom14' title='Create an Order' class='slds-card small'>
+        <lightning-record-edit-form object-api-name="Order" id="createOrderForm" onsuccess={handleSuccess}>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="AccountId"></lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="EffectiveDate"></lightning-input-field>
+                </div>
+            </div>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="Status"></lightning-input-field>
+                </div>
+            </div>
+            <lightning-button variant="brand" type="submit" label="Create Order"></lightning-button>
+            &nbsp;&nbsp;
+            <lightning-button variant="brand" onclick={reset} label="Reset"></lightning-button>
+        </lightning-record-edit-form>
+        </lightning-card>
+    </div>
+</template>

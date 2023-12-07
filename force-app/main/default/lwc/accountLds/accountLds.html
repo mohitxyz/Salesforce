@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+       <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+           <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+            <lightning-input type="text" variant="standard" name="accountName" label="Account Name" onchange={changeHandler} ></lightning-input>
+            <lightning-input type="text" variant="standard" name="accountPhone" label="Account Phone" onchange={changeHandler}></lightning-input>
+            <lightning-input type="url" variant="standard" name="website" label="Website" onchange={changeHandler}></lightning-input> 
+            <lightning-button variant="brand" label="Create Account" title="Create Account" onclick={createAccount}></lightning-button>
+            
+           </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+            <div class="custom-box">2</div>
+        </lightning-layout-item>
+        
+       </lightning-layout>
+    </lightning-card>
+    
+</template>

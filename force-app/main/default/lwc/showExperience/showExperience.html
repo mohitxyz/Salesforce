@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2" >
+                <lightning-textarea name="heading" label="Heading"  value={wiredCar.heading}></lightning-textarea>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+                <!--lightning-textarea name="description" label="Description"  value={wiredCar.description}></lightning-textarea !-->
+                <lightning-input-rich-text value={wiredCar.description}></lightning-input-rich-text>
+            </lightning-layout-item>
+            
+        </lightning-layout>
+    </lightning-card>
+</template>

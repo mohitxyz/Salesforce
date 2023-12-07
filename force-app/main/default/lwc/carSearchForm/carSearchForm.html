@@ -1,0 +1,18 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Set your View" icon-name="standard:account">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="3" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <lightning-combobox
+                    name="progress"
+                    label="Car Type"
+                    value={selectedValue}
+                    placeholder="All Car types"
+                    options={carTypes}
+                    onchange={handleComboChange} ></lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-button variant="brand" label="New" onclick={createNewCarType}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

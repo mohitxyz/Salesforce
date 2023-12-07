@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Car Results" icon-name="standard:account">
+        <lightning-layout multiple-rows>
+                <template if:true={isAvailCars}>
+                    <template for:each={cars} for:item="item"> 
+                        <lightning-layout-item key ={item.id} size="6" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                            
+                            <c-car-tile car={item} oncarselect={carSelectHandler} > </c-car-tile>
+                        </lightning-layout-item>
+                    </template >
+                </template>  
+                <template if:false={isAvailCars}> No data </template>         
+        </lightning-layout>
+    </lightning-card>
+</template>

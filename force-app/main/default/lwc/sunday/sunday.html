@@ -1,0 +1,38 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="1" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+                <lightning-input type="text" size="2" variant="small" name="firstName" label="firstName" onchange={changeHandler}  value={masterData.firstName}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="1" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-input type="text" size="2" variant="standard" name="lastName"  label="lastName" onchange={changeHandler} value={masterData.lastName} ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="1" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-input type="text" size="2" variant="standard" name="lastName"  label="lastName" onchange={changeHandler}  ></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="1" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-input type="number"  size="2" variant="standard" name="age" label="age" onchange={changeHandler} ></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="1" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3">
+                <lightning-button variant="brand" label="Query" title="Query" onclick={handleClick} name="queryButton"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+           
+           
+            
+       <div>
+          <lightning-input type="datetime" variant="standard" name="dob" label="DOB" onchange={changeHandler} ></lightning-input>
+          <lightning-input type="checkbox" variant="standard" name="gender" label="gender"  ></lightning-input>
+          <lightning-input type="password" variant="standard" name="password" label="password"  ></lightning-input>
+          <lightning-input type="file" variant="standard" name="file" label="file"  ></lightning-input>
+          <lightning-input type="url" variant="standard" name="website" label="website"  ></lightning-input>
+       </div>
+
+       <div>
+        <lightning-input type="text" variant="standard" name="addName" label="addName" value={addName} ></lightning-input>
+       </div>
+       
+        
+    </lightning-card>
+</template>
