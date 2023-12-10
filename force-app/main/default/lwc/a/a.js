@@ -5,5 +5,5 @@ export default class A extends LightningElement {
     name = 'mohit';
      //feature 1    (dropdown added)
     // feature 1 - dropdown
-    // main - A
+    // feature1 - B
 }
